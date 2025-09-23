@@ -1,0 +1,11 @@
+html {
+background-image: url('/fundo.jpg');
+}
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 30px;
+    padding: 30px;
+    color: hsl(200, 95%, 14%);
+   text-align: center; 
+}
+
