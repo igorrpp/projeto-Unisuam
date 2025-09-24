@@ -3,8 +3,10 @@
 
 <head>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link referente ao icons do booststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,49 +14,78 @@
     <title>Página inicial</title>
 </head>
 
-<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Menu</a>
+<style>
+    #textoCorrendo {
+        background-color: rgb(245, 255, 151);
+    }
+</style>
+
+<body>
+    <div id="textoCorrendo">
+        <marquee direction="left">
+            💳 PAGUE NO PIX COM 5% DE DESCONTO 🎁 10% OFF PRIMEIRA COMPRA NO CUPOM: [PRIMEIRACOMPRA] 📦 ENVIAMOS PARA
+            TODO O BRASIL 🚚 FRETE GRÁTIS A PARTIR DE R$ 99,90
+        </marquee>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" width="50px" height="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
+
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Comidas <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="">"Link das paginas"</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./cadrastro.html">Cadastro</a>
+                    <a class="nav-link" href="#">"Link das paginas"</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="./Login.html" tabindex="-1" aria-disabled="true">Login</a>
+                    <a class="nav-link" href="#">"Link das paginas"</a>
+
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">login</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cadrastro.html">cadastro</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">sobre</a>
+                </li>
+
+
             </ul>
+
         </div>
     </nav>
-    
+
+
     <!-- Parte do carroussel -->
 
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample" class="carousel slide carousel-fade">
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="./img/comida1.jpg"
-                    class="d-block w-100" alt="..."  height="450px">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="comida 1" height="450">
             </div>
             <div class="carousel-item">
-                <img src="./img/comida2.jpg"
-                    class="d-block w-100" alt="..." height="40px">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="comida 2" height="450px">
             </div>
             <div class="carousel-item">
-                <img src="./img/comida1.jpg"
-                    class="d-block w-100" alt="..."  height="40px">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="comida 3" height="450px">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -66,17 +97,69 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    #
+
+
+
+    <!-- 
+Remove o contêiner se desejar estender o rodapé até a largura total. -->
+    <div class="container my-3">
+
+        <footer class="bg-warning text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-2 pb-0">
+                <!-- Seção  Media  social-->
+                <section class="mb-3">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-facebook"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-instagram"></i></a>
+
+                    <!-- whatsapp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-whatsapp"></i></a>
+                </section>
+                <!-- Seção  Media  social-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2025 Copyright:
+                <a class="text-white" href="#">Restaurante sem nome</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+
 </body>
+
+
 
 </html>
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
