@@ -4,7 +4,7 @@
 
 html,
 body {
-    background-image: url('../img/bgLogin.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/491/637/non_2x/italian-food-background-italian-cuisine-ingredients-on-a-yellow-background-cooking-concept-cooking-background-free-photo.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -93,3 +93,4 @@ input:focus {
    color : white;
 
 }
+
