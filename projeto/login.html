@@ -25,53 +25,6 @@
 </head>
 
 <body>
-	<div id="textoCorrendo">
-		<marquee direction="left">
-			💳 PAGUE NO PIX COM 5% DE DESCONTO 🎁 10% OFF PRIMEIRA COMPRA NO CUPOM: [PRIMEIRACOMPRA] 📦 ENVIAMOS PARA
-			TODO O BRASIL 🚚 FRETE GRÁTIS A PARTIR DE R$ 99,90
-		</marquee>
-	</div>
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-warning ">
-		<a class="navbar-brand" href="./index.html">
-			<img src="./img/logo.png" width="50px" height="50px"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarNav">
-
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Comidas <span class="sr-only"></span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./index.html">"Inicio"</a>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="./Login.html">login</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./cadrastro.html">cadastro</a>
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link " href="#" tabindex="-1" aria-disabled="true">sobre</a>
-				</li>
-
-
-			</ul>
-
-		</div>
-	</nav>
-
-
-
-
-
-
 	<div class="container">
 		<div class="d-flex justify-content-center h-100">
 			<div class="card">
@@ -85,14 +38,16 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="usuário ou e-mail">
+							<input type="text" class="form-control" placeholder="usuário ou e-mail" minlength="6"
+								required>
 
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" class="form-control" placeholder="senha">
+							<input type="password" class="form-control" placeholder="senha" minlength="6"
+								required>
 						</div>
 
 						<div class="row align-items-center remember">
@@ -107,7 +62,7 @@
 
 				<div class="card-footer">
 					<div class="d-flex justify-content-center links">
-						Não tem uma conta?<a href="cadrastro.html">Cadastre-se</a>
+						Não tem uma conta?<a href="cadastro.html">Cadastre-se</a>
 					</div>
 					<div class="d-flex justify-content-center">
 						<a href="#">Esqueceu sua senha?</a>

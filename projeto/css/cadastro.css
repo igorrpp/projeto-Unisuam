@@ -1,0 +1,98 @@
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        background-image: url('../img/bgLogin.jpg');
+        
+    }
+
+    .form-container {
+        width: 500px;
+        padding: 20px;
+        background: 8px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ffc41262;
+        margin: 10px;
+        background-color:  rgba(0, 0, 0, 0.56) !important;
+        color: white;
+    }
+
+    form {
+        display: grid;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.217);
+        border-radius: 4px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid rgba(9, 23, 14, 0.146);
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 200px;
+        background-color: #FFC312;
+        color: white;
+        border: none;
+        border-radius: 4px;
+
+
+    }
+
+    button:hover {
+        background-color: rgba(226, 186, 43, 0.977);
+        cursor: pointer;
+
+
+    }
+
+
+
+    h2 {
+        text-align: center;
+    }
+
+    @media(max-width: 600px) {
+        .form-container {
+            width: 80vw;
+        }
+
+        input {
+            padding: 6px;
+
+        }
+
+        button {
+            padding: 8px 150px;
+        }
+    }
+
+
+    input:focus:invalid {
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.548);
+
+        color: red
+    }
+
+    input:focus:valid {
+
+        box-shadow: 0 0 5px rgba(0, 128, 0, 0.696);
+        color: green
+    }

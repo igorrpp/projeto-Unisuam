@@ -1,4 +1,7 @@
-body {
-    background-color: #b97a56
+body{
+    background-color: #b97a56;
 }
 
+.nav {
+    padding: 400px;
+}
