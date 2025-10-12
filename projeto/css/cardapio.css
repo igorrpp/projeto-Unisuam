@@ -1,0 +1,143 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Fundo suave 
+body {
+  background-color: #f4f4f4;
+
+  color: #333;
+  line-height: 1.6;
+}
+*/
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #a30000;
+  /* Cor que remete a comida/restaurante */
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+/* ESTILIZAÇÃO DO CONTAINER PRINCIPAL */
+.cardapio-container {
+  width: 90%;
+  max-width: 1540px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ESTILIZAÇÃO DAS CATEGORIAS */
+.categoria {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
+  /* Separador entre categorias */
+}
+
+.categoria h2 {
+  font-size: 2em;
+  color: #6a0000;
+  border-left: 5px solid #a30000;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* ESTILIZAÇÃO DO CARTÃO DE PRATO INDIVIDUAL */
+.prato-card {
+  display: flex;
+  /* Permite alinhar imagem e info lado a lado */
+  align-items: center;
+  /* Alinha verticalmente no centro */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  overflow: hidden;
+  /* Garante que a imagem fique dentro da borda */
+  transition: transform 0.3s ease;
+  /* Efeito ao passar o mouse */
+}
+
+
+.prato-card:hover {
+  transform: translateY(-5px);
+  /* Efeito de "levantar" ao passar o mouse */
+  box-shadow: 0 0 10px #ffc107;
+  cursor: pointer;
+
+}
+
+/* IMAGEM DO PRATO */
+.prato-card img {
+  width: 30%;
+  /* A imagem ocupa 30% da largura do card */
+  max-height: 150px;
+  object-fit: cover;
+  /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+/* INFORMAÇÕES DO PRATO */
+.prato-info {
+  width: 70%;
+  /* O texto ocupa os 70% restantes */
+  padding: 15px 20px;
+}
+
+.prato-info h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.descricao {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.preco {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #a30000;
+  /* Destaque o preço com a cor principal */
+  display: block;
+  /* Garante que o preço fique na sua própria linha */
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES (smartphones) */
+@media (max-width: 768px) {
+  .prato-card {
+    flex-direction: column;
+    /* Empilha a imagem e o texto em telas pequenas */
+    text-align: center;
+  }
+
+  .prato-card img,
+  .prato-info {
+    width: 100%;
+    /* Ocupa 100% da largura em telas pequenas */
+  }
+
+  .prato-card img {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    /* Arredonda só a parte de cima */
+  }
+
+  .prato-info {
+    padding-bottom: 20px;
+    /* Mais espaço no final */
+  }
+
+  
+}

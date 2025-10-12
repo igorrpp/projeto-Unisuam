@@ -1,0 +1,113 @@
+
+/* Estilos Gerais (Reset e Fundo) */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8; /* Fundo suave */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o formulário horizontalmente */
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal do Formulário */
+.container {
+    max-width: 550px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* Títulos e Parágrafos */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+/* Grupos de Campo */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Rótulos (Labels) */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9em;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+/* Indicador de Campo Obrigatório */
+.required::after {
+    content: "*";
+    color: #e74c3c; /* Vermelho vibrante */
+    margin-left: 4px;
+}
+
+/* Estilo dos Campos de Input, Select e Textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Foco nos Campos (Melhora a Acessibilidade) */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #f39c12; /* Cor de destaque (laranja/ouro, comum em restaurantes) */
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.4);
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Textarea (Área de Mensagem) */
+textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    min-height: 120px;
+}
+
+/* Estilo do Botão de Envio */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #c0392b; /* Cor primária (vermelho escuro) */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efeito Hover no Botão */
+button[type="submit"]:hover {
+    background-color: #e74c3c; /* Cor mais clara ao passar o mouse */
+}
