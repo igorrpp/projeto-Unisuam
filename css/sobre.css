@@ -1,0 +1,117 @@
+/* ==================================== */
+/* Estilos Base - Aplicados a todas as telas */
+/* ==================================== */
+
+body {
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    /* Remove a largura fixa para que o corpo se adapte */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 0 15px; /* Adiciona um padding lateral para telas pequenas */
+    width: 90%; /* Usa largura relativa (90%) para o layout principal */
+    max-width: 940px; /* Define um limite máximo para telas grandes */
+}
+
+h1 {
+    background-image: url('../img/body-background.png');
+    padding: 10px;
+    /* Ajustes para telas pequenas */
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;
+}
+
+h3 {
+    background-color: #F2EDED;
+}
+
+p {
+    /* Mantém o padding interno, mas o 45px pode ser muito em telas pequenas */
+    padding: 0 15px; /* Reduz o padding lateral para telas menores */
+    text-indent: 15px;
+}
+
+figure {
+    background-color: #F2EDED;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px auto; /* Centraliza a figure */
+    width: auto; /* Remove largura fixa se houver */
+    max-width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* ==================================== */
+/* Rodapé */
+/* ==================================== */
+
+#rodape {
+    color: #777;
+    margin: 30px 0; /* Ajusta a margem, remove o 30px lateral fixo */
+    padding: 30px 15px; /* Adiciona padding para telas pequenas */
+    text-align: center; /* Centraliza o conteúdo do rodapé em telas menores */
+}
+
+#rodape img {
+    /* Corrigido o espaço em '30 px' para '30px' */
+    margin: 10px 15px; /* Adiciona margem em todas as direções para melhor espaçamento em telas pequenas */
+    vertical-align: middle;
+    width: 94px;
+}
+
+/* ==================================== */
+/* Imagem Flutuante (Problemática em Responsividade) */
+/* ==================================== */
+
+#familia-guanabara {
+    /* Float é geralmente evitado em layouts responsivos,
+       mas vamos mantê-lo para o layout desktop e ajustá-lo no mobile */
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse seu contêiner */
+    height: auto;
+}
+
+/* ==================================== */
+/* MEDIA QUERIES - Ajustes para Telas Menores (Dispositivos Móveis) */
+/* ==================================== */
+
+@media screen and (max-width: 600px) {
+    /* Para telas de até 600px de largura (smartphones) */
+
+    body {
+        width: 100%; /* Ocupa a largura total */
+        padding: 0 10px;
+    }
+
+    p {
+        padding: 0 10px; /* Diminui o padding dos parágrafos */
+    }
+
+    #familia-guanabara {
+        /* Remove o float para que a imagem ocupe a largura total
+           e não quebre o layout no celular */
+        float: none;
+        display: block;
+        margin: 20px auto 10px auto; /* Centraliza a imagem */
+    }
+
+    #rodape {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Rodapé - Se houver mais de uma imagem, ajustamos o display */
+    #rodape img {
+        display: block; /* Cada imagem ocupa uma linha */
+        margin: 10px auto; /* Centraliza as imagens no rodapé */
+    }
+}

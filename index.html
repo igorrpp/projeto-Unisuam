@@ -1,0 +1,251 @@
+<!DOCTYPE html >
+<html  lang="PT-BR" >
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link referente ao icons do booststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    
+    
+    </script>
+    <title>Página inicial</title>
+</head>
+
+<body>
+    <div id="textoCorrendo">
+        <marquee direction="left">
+            💳 PAGUE NO PIX COM 5% DE DESCONTO 🎁 10% OFF PRIMEIRA COMPRA NO CUPOM: [PRIMEIRACOMPRA] 📦 ENVIAMOS PARA
+            TODO O BRASIL 🚚 FRETE GRÁTIS A PARTIR DE R$ 99,90
+        </marquee>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comidas <span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">cardápio</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contato.html">Contato</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Login.html">login</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cadastro.html">cadastro</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="./sobre.html" tabindex="-1" aria-disabled="true">sobre nós</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Parte do carroussel -->
+
+    <div id="carouselExample" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="comida 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="comida 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="comida 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- =========================== parte dos pratos principais =========================== -->
+
+    <main class="cardapio-container">
+        <link rel="stylesheet" href="css/cardapio.css">
+
+        <section class="categoria">
+            <h2 id="menu">Entradas</h2>
+
+            <article class="prato-card">
+                <img src="./img/feijoada.webp" alt="Feijoada">
+                <div class="prato-info">
+                    <h3>Feijoada</h3>
+                    <p class="descricao">feijão preto cozido com diversas carnes suínas e bovinas salgadas, como
+                        linguiças, toucinho e orelha de porco..</p>
+                    <span class="preco">R$ 28,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="./img/carreacebolado.webp" alt="Carré Acebolado">
+                <div class="prato-info">
+                    <h3>Carré Acebolado</h3>
+                    <p class="descricao">É um carré feito numa panela e tem um corte de sabor marcante e maciez.</p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="categoria">
+            <h2>Pratos Principais</h2>
+
+            <article class="prato-card">
+                <img src="./img/risoto.webp" alt="Risoto de Camarão com limão siciliano">
+                <div class="prato-info">
+                    <h3>Risoto de Camarão</h3>
+                    <p class="descricao">Arroz arbóreo cremoso com camarões frescos e toque de limão siciliano.</p>
+                    <span class="preco">R$ 79,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="./img/bife-ancho.png" alt="Bife Ancho com batatas rústicas">
+                <div class="prato-info">
+                    <h3>Bife Ancho Premium</h3>
+                    <p class="descricao">Corte nobre grelhado no ponto, acompanhado de batatas rústicas e chimichurri da
+                        casa.</p>
+                    <span class="preco">R$ 95,00</span>
+                </div>
+            </article>
+
+        </section>
+        <section class="categoria">
+            <h2>Bebidas Sem Alcool</h2>
+
+            <article class="prato-card">
+                <img src="img/agua.jpg" alt="Agua Mineral e Sem Gás">
+                <div class="prato-info">
+                    <h3>Agua Mineral e Sem Gás</h3>
+                    <p class="descricao">.</p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+            <article class="prato-card">
+                <img src="img/red.webp" alt="Red Bull">
+                <div class="prato-info">
+                    <h3>Red Bull</h3>
+                    <p class="descricao">.</p>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+            </article>
+            <article class="prato-card">
+                <img src="img/refrigerante.webp" alt="Refrigerante">
+                <div class="prato-info">
+                    <h3>Refrigerante</h3>
+                    <p class="descricao">.</p>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+            </article>
+            <article class="prato-card">
+                <img src="img/suco.webp" alt="Suco de Laranja Natural">
+                <div class="prato-info">
+                    <h3>Suco de Laranja Natural</h3>
+                    <p class="descricao"></p>
+                    <span class="preco">R$ 18,00</span>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- 
+Remove o contêiner se desejar estender o rodapé até a largura total. -->
+    <div class="container my-3">
+
+        <footer class="bg-warning text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-2 pb-0">
+                <!-- Seção  Media  social-->
+                <section class="mb-3">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-facebook"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-instagram"></i></a>
+
+                    <!-- whatsapp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-whatsapp"></i></a>
+                </section>
+                <!-- Seção  Media  social-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2025 Copyright:
+                <a class="text-white" href="#">Restaurante sem nome</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    <button onclick="toggleTheme()">click</button>
+
+</body>
+
+
+
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
