@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link referente ao icons do booststrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Página inicial</title>
+</head>
+
+
+<style>
+    #textoCorrendo {
+        background-color: rgb(245, 255, 151);
+    }
+</style>
+
+<body>
+    <div id="textoCorrendo">
+        <marquee direction="left">
+            💳 PAGUE NO PIX COM 5% DE DESCONTO 🎁 10% OFF PRIMEIRA COMPRA NO CUPOM: [PRIMEIRACOMPRA] 📦 ENVIAMOS PARA
+            TODO O BRASIL 🚚 FRETE GRÁTIS A PARTIR DE R$ 99,90
+        </marquee>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="contato.html">Entre em Contato</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cardapio.html">Cardápio</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="sobre.html" tabindex="-1" aria-disabled="true">sobre</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Parte do carroussel -->
+
+    <div id="carouse" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item2">
+                <img src="img/banner3.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<br><br>
+<head id="sobre">
+    <h1>Sobre Nós</h1>
+    <br>
+Seja
+bem-vindo ao Nosso Restaurante.
+<br>
+<strong>Aqui é um restaurante acolhedor e familiar que oferece a verdadeira comida caseira. Inaugurado em 2003, o restaurante era especializado em FRANGO ASSADO e ainda oferecia diversos produtos em seu cardápio, além de bebidas e sobremesas.</strong>
+<br><br>
+</main>
+</head>
+<br>
+<head id="localização">
+    <h2>Localização do Restaurante</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235031.4502516289!2d-43.53386721237066!3d-23.010315013754724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda4a27b6fe5d%3A0x63c3f6d1d89e0f4e!2sBarra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1760406694781!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</head> 
+<br><br>
+    <div class="reserva-container">
+        <h2>Reserve Sua Mesa</h2>
+        
+        <form action="#" method="POST"> 
+            
+            <fieldset>
+                <legend>Detalhes da Reserva</legend>
+                <div class="form-group">
+                    <label for="pessoas">Número de Pessoas:</label>
+                    <input type="number" id="pessoas" name="pessoas" min="1" max="15" placeholder="São quantas pessoas?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data_reserva" placeholder="Vai ser que dia?" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hora">Horário:</label>
+                    <input type="time" id="hora" name="hora_reserva" placeholder="Vai ser que horas?" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Suas Informações Pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome_cliente" placeholder="Digita seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone_cliente" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_cliente" placeholder="seu-email@gmail.com" required>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="obs">Observações Especiais (Opcional):</label>
+                <textarea id="obs" name="observacoes" rows="3" placeholder="Ex: Preciso de uma cadeira de bebê, alergia a glúten, mesa próxima à janela."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Confirmar Reserva</button>
+            </div>
+
+        </form>
+    </div>
+      <style>
+        /* CSS BÁSICO PARA MELHOR VISUALIZAÇÃO */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .reserva-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .reserva-container h2 { text-align:center; color: #333; margin-bottom: 25px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .form-group button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; }
+        .form-group button:hover { background-color: #45a049; }
+    </style>
+<!-- 
+Remove o contêiner se desejar estender o rodapé até a largura total. -->
+    <div class="container my-3">
+
+        <footer class="bg-warning text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-2 pb-0">
+                <!-- Seção  Media  social-->
+                <section class="mb-3">
+
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-facebook"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-instagram"></i></a>
+
+                    <!-- whatsapp -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="bi bi-whatsapp"></i></a>
+                </section>
+                <!-- Seção  Media  social-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2025 Copyright:
+                <a class="text-white" href="#">Sinfonia de Sabores</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+
+</body>
+
+
+
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
