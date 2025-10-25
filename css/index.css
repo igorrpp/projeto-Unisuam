@@ -8,13 +8,13 @@ body {
 .navbar {
     top: 1px;
     position: sticky;
-     z-index: 999;
+    z-index: 999;
 }
 
 #textoCorrendo {
     background-color: rgb(245, 255, 151);
 }
-/* Segunda parte  */
+
 
 
 /* CSS BÁSICO PARA MELHOR VISUALIZAÇÃO */
@@ -22,10 +22,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
-}
-#localização {
-    background-color: red;
-    
 }
 
 .reserva-container {
@@ -78,10 +74,6 @@ body {
 .form-group button:hover {
     background-color: #45a049;
 }
-
-
-
-
 
 
 /* #carouselExample,

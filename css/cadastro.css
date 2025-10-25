@@ -10,7 +10,8 @@
         display: grid;
         place-content: center;
         height: 100vh;
-        background-image: url('../img/bgLogin.jpg');
+        background-image: url('../img/bgfundo.jpg');
+        background-size: cover;
 
     }
 
@@ -21,8 +22,8 @@
         border-radius: 10px;
         box-shadow: 0 0 10px #ffc41262;
         margin: 10px;
-        background-color: rgba(0, 0, 0, 0.56) !important;
-        color: white;
+        background-color: rgba(255, 255, 255, 0.969) !important;
+        color: rgb(0, 0, 0);
     }
 
     form {
@@ -57,7 +58,7 @@
     }
 
     button:hover {
-        background-color: rgba(226, 186, 43, 0.977);
+       background-color: #ffc41276;
         cursor: pointer;
 
 
@@ -66,7 +67,7 @@
 
 
 
-    h2 {
+    h2,h4, #setaVoltar {
         text-align: center;
     }
 
@@ -84,18 +85,6 @@
             padding: 8px 150px;
         }
     }
-    #setaVoltar {
-        margin: 200px;
-        
-        color: #FFC312;
-     
-    
-    }
-
-    #setaVoltar:hover {
-       color : white;
-    
-    }
 
 
     input:focus:invalid {
@@ -109,5 +98,3 @@
         box-shadow: 0 0 5px rgba(0, 128, 0, 0.696);
         color: green
     }
-
-   

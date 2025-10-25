@@ -63,7 +63,7 @@
       </div>
 
       <div class="form-group">
-        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="cadastrar(event)">Cadastrar</button>
        
       </div>
       <div class="d-flex justify-content-center">
@@ -72,7 +72,7 @@
     </form>
 
   </div>
- <button onclick="trazerUsuario()">trazer</button>
+ 
 </body>
 
 </html>
@@ -82,6 +82,7 @@
 <script>
 
   function cadastrar() {
+    event.preventDefault();
 
     let v_email = document.getElementById('inputEmail').value
     let v_senha = document.getElementById('inputSenha').value
@@ -94,6 +95,8 @@
       senha: v_senha
     }
     localStorage.setItem('usuario', JSON.stringify(usuario));
+    alert('Cadastro feito com sucesso!')
+    window.location.href = "login.html";
     
   }
 
