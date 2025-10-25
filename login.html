@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" >
+<html lang="pt-BR">
 
 <head>
 	<title>Login nome do restaurante#</title>
@@ -20,10 +20,7 @@
 		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="./css/login.css">
-
-	
 </head>
 
 <body>
@@ -40,7 +37,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="usuário ou e-mail" minlength="6"
+							<input id="inputEmail" type="text" class="form-control" placeholder="e-mail" minlength="6"
 								required>
 
 						</div>
@@ -48,16 +45,17 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" class="form-control" placeholder="senha" minlength="6"
+							<input id=inputSenha type="password" class="form-control" placeholder="senha" minlength="6"
 								required>
 						</div>
 
-						<div class="row align-items-center remember">
+						<!-- <div class="row align-items-center remember">
 							<input type="checkbox">Salvar login
-						</div>
+						</div> -->
 
 						<div class="form-group">
-							<input type="submit" value="Entrar" class="btn float-right login_btn">
+							<input onclick="trazerUsuario()" value="Entrar"
+								class="btn float-right login_btn">
 						</div>
 					</form>
 				</div>
@@ -79,7 +77,35 @@
 		</div>
 	</div>
 
-	
+	<button onclick="redirecionar()">trazer usuário</button>
 </body>
 
 </html>
+
+<script>
+	function trazerUsuario() {
+		let usuarioString = localStorage.getItem('usuario')
+		let usuarioRecuperar = JSON.parse(usuarioString);
+
+		let v_senha = document.getElementById('inputSenha').value
+		let v_email = document.getElementById('inputEmail').value
+
+
+
+		if (v_senha === usuarioRecuperar.senha && v_email === usuarioRecuperar.email) {
+
+			alert("Logado com sucesso! " + usuarioRecuperar.nome)
+			window.location.href = "index.html";
+			
+		} else {
+			alert("E-mail ou senha estão incorretos!")
+		}
+
+
+	}
+
+	function redirecionar() {
+		window.location.href = "index.html";
+
+	}
+</script>

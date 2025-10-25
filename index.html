@@ -12,10 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-
-
-    </script>
-    <title>Página inicial</title>
+    <title>Sinfonia do sabor</title>
 </head>
 
 <body>
@@ -28,7 +25,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-warning ">
         <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" width="50px" height="50px"></a>
+            <img src="./img/logo.png" width="55px" height="55px"> ♪Sinfonia do sabor♪</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,28 +34,48 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav">
-               
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span class="sr-only"></span></a>
+                </li>
+
+                <!-- Dropdown menu Âncora ===================== -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        cardápio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#menu">Entradas</a></li>
+                        <li><a class="dropdown-item" href="#principais">Pratos principais</a></li>
+                        <li><a class="dropdown-item" href="#bebidas">Bebidas</a></li>
+                        <li><a class="dropdown-item" href="#sobremesas">Sobremesa</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#menu">cardápio</a>
+                    <a class="nav-link" href="#reservar">Reservar</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./contato.html">Contato</a>
-
+                    <a class="nav-link" href="#localização">Localização</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="./Login.html">login</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./cadastro.html">cadastro</a>
+                    <a class="nav-link" href="./cadastro.html">cadastre-se</a>
 
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link " href="./sobre.html" tabindex="-1" aria-disabled="true">sobre nós</a>
+                    <a class="nav-link " href="./sobre.html" tabindex="-1" aria-disabled="true">sobre</a>
                 </li>
+
+
             </ul>
 
         </div>
@@ -71,266 +88,301 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="./img/banner4.jpg" class="d-block w-100" alt="comida 1">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="comida 1">
             </div>
-          
+            <div class="carousel-item">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="comida 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner3.jpg" class="d-block w-100" alt="comida 3">
+            </div>
         </div>
-       
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- =========================== parte dos pratos principais =========================== -->
-
-    <header>
-        <h1>Nosso Cardápio</h1>
-        <p>Sabores únicos, feitos com paixão.</p>
-      </header>
-  
-      <main class="cardapio-container" id="menu">
+     
+    <main class="cardapio-container">
         <link rel="stylesheet" href="css/cardapio.css" />
-  
-        <section class="categoria">
-          <h2>Entradas</h2>
-  
-          <article class="prato-card">
-            <img src="img/batata-frita.jpg" alt="batata-frita" />
-            <div class="prato-info">
-              <h3>onis de batata</h3>
-              <p class="descricao">
-                Snacks crocantes de batata com tempero de cebola, frequentemente combinados com salsa. 
-              </p>
-              <span class="preco">R$ 28,00</span>
-            </div>
-          </article>
-  
-          <article class="prato-card">
-            <img src="img/queijo.jpg" alt="queijo" />
-            <div class="prato-info">
-              <h3>Tábua de queijo torrada</h3>
-              <p class="descricao">
-                A Tábua de Queijos é entregue montada, frios cortados, decorada e selada em bandeja de mdf. 
-              </p>
-              <span class="preco">R$ 35,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/carne-seca.jpg" alt="carne seca" />
-            <div class="prato-info">
-              <h3>Bolinho de carne seca</h3>
-              <p class="descricao">
-                É um carré feito numa panela e tem um corte de sabor marcante e
-                maciez.
-              </p>
-              <span class="preco">R$ 35,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/saldaVerde.jpg" alt="salada verde" />
-            <div class="prato-info">
-              <h3>Salada Verde</h3>
-              <p class="descricao">
-                É um carré feito numa panela e tem um corte de sabor marcante e
-                maciez.
-              </p>
-              <span class="preco">R$ 35,00</span>
-            </div>
-          </article>
-        </section>
-  
-        <section class="categoria">
-          <h2>Pratos Principais</h2>
-  
-          <article class="prato-card">
-            <img
-              src="img/almondega.jpg"
-              alt="almondega"
-            />
-            <div class="prato-info">
-              <h3>almondega</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 25,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/feijoada.jpg" alt="feijoada" />
-            <div class="prato-info">
-              <h3>Feijoada</h3>
-              <p class="descricao">
-                Corte nobre grelhado no ponto, acompanhado de batatas rústicas e
-                chimichurri da casa.
-              </p>
-              <span class="preco">R$ 60,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/lasanha.jpg" alt="lasanha" />
-            <div class="prato-info">
-              <h3>Lasanha</h3>
-              <p class="descricao">
-                Corte nobre grelhado no ponto, acompanhado de batatas rústicas e
-                chimichurri da casa.
-              </p>
-              <span class="preco">R$ 43,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/costelinha.jpg" alt="costelinha" />
-            <div class="prato-info">
-              <h3>Costelinha</h3>
-              <p class="descricao">
-                Corte nobre grelhado no ponto, acompanhado de batatas rústicas e
-                chimichurri da casa.
-              </p>
-              <span class="preco">R$ 60,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/contrafile.jpg" alt="contrafile" />
-            <div class="prato-info">
-              <h3>Contra Filá</h3>
-              <p class="descricao">
-                Corte nobre grelhado no ponto, acompanhado de batatas rústicas e
-                chimichurri da casa.
-              </p>
-              <span class="preco">R$ 75,00</span>
-            </div>
-          </article>
-        </section>
-        <section class="categoria">
-          <h2>Bebidas Sem Alcool</h2>
-  
-          <article class="prato-card">
-            <img src="img/agua.jpg" alt="Agua Mineral e Sem Gás" />
-            <div class="prato-info">
-              <h3>Agua Mineral e Sem Gás</h3>
-              <p class="descricao">.</p>
-              <span class="preco">R$ 10,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/cerveja.jpg" alt="cerveja" />
-            <div class="prato-info">
-              <h3>Cerveja</h3>
-              <p class="descricao">.</p>
-              <span class="preco">R$ 10,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/vinho.jpg" alt="vinho" />
-            <div class="prato-info">
-              <h3>Vinho Suave</h3>
-              <p class="descricao">.</p>
-              <span class="preco">R$ 10,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/redbull.jpg" alt="Red Bull" />
-            <div class="prato-info">
-              <h3>Red Bull</h3>
-              <p class="descricao">.</p>
-              <span class="preco">R$ 12,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/refrigerante.webp" alt="Refrigerante" />
-            <div class="prato-info">
-              <h3>Refrigerante</h3>
-              <p class="descricao">.</p>
-              <span class="preco">R$ 15,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/suco.webp" alt="Suco de Laranja Natural" />
-            <div class="prato-info">
-              <h3>Suco de Laranja Natural</h3>
-              <p class="descricao"></p>
-              <span class="preco">R$ 18,00</span>
-            </div>
-          </article>
-        </section>
-        <section class="categoria">
-        <h2>sobremesas</h2>
-          <article class="prato-card">
-            <img src="img/semifreddo.jpg" alt="semifreddo" />
-            <div class="prato-info">
-              <h3>semifreddo</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 30,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/frozen.jpg" alt="frozen" />
-            <div class="prato-info">
-              <h3>frozen</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 24,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/trufaCereja.jpg" alt="trufaCereja" />
-            <div class="prato-info">
-              <h3>trufa de Cereja</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">35,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/torta-de-brigadeiro.jpg" alt="torta-de-brigadeiro" />
-            <div class="prato-info">
-              <h3>Torta de Brigadeiro</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 28,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/panna.jpg" alt="panna" />
-            <div class="prato-info">
-              <h3>Panna</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 42,00</span>
-            </div>
-          </article>
-          <article class="prato-card">
-            <img src="img/cheesecake.jpg" alt="cheesecake" />
-            <div class="prato-info">
-              <h3>cheesecake</h3>
-              <p class="descricao">
-                Arroz arbóreo cremoso com camarões frescos e toque de limão
-                siciliano.
-              </p>
-              <span class="preco">R$ 35,00</span>
-            </div>
-          </article>
-        </section>
-        <br>
 
-    <head id="localização">
-        <h2>Localização do Restaurante</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235031.4502516289!2d-43.53386721237066!3d-23.010315013754724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda4a27b6fe5d%3A0x63c3f6d1d89e0f4e!2sBarra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1760406694781!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </head>
-    <br><br>
+        <section class="categoria">
+            <h2 id="menu">Entradas</h2>
+
+            <article class="prato-card">
+                <img src="img/batata-frita.jpg" alt="batata-frita" />
+                <div class="prato-info">
+                    <h3>Onis de Batata</h3>
+                    <p class="descricao">
+                        Deliciosos bolinhos crocantes de batata temperados com ervas e cebola, ideais para compartilhar.
+                    </p>
+                    <span class="preco">R$ 28,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/queijo.jpg" alt="queijo" />
+                <div class="prato-info">
+                    <h3>Tábua de Queijo Torrada</h3>
+                    <p class="descricao">
+                        Seleção especial de queijos finos servidos com torradas crocantes e acompanhamentos artesanais.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/carne-seca.jpg" alt="carne seca" />
+                <div class="prato-info">
+                    <h3>Bolinho de Carne Seca</h3>
+                    <p class="descricao">
+                        Bolinhos dourados recheados com carne seca desfiada e temperos nordestinos, crocantes por fora e
+                        macios por dentro.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/saldaVerde.jpg" alt="salada verde" />
+                <div class="prato-info">
+                    <h3>Salada Verde</h3>
+                    <p class="descricao">
+                        Mix fresco de folhas verdes, tomate-cereja e molho especial da casa, ideal para começar a
+                        refeição com leveza.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            <h2 id="principais">Pratos Principais</h2>
+
+            <article class="prato-card">
+                <img src="img/almondega.jpg" alt="almondega" />
+                <div class="prato-info">
+                    <h3>Almôndega</h3>
+                    <p class="descricao">
+                        Almôndegas suculentas preparadas com carne selecionada e molho de tomate artesanal, servidas com
+                        arroz branco.
+                    </p>
+                    <span class="preco">R$ 25,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/feijoada.jpg" alt="feijoada" />
+                <div class="prato-info">
+                    <h3>Feijoada</h3>
+                    <p class="descricao">
+                        Tradicional feijoada brasileira com carnes defumadas, servida com arroz, farofa, couve e
+                        laranja.
+                    </p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/lasanha.jpg" alt="lasanha" />
+                <div class="prato-info">
+                    <h3>Lasanha</h3>
+                    <p class="descricao">
+                        Camadas de massa fresca intercaladas com molho bolonhesa, queijo derretido e molho bechamel
+                        cremoso.
+                    </p>
+                    <span class="preco">R$ 43,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/costelinha.jpg" alt="costelinha" />
+                <div class="prato-info">
+                    <h3>Costelinha</h3>
+                    <p class="descricao">
+                        Costelinha suína assada lentamente até atingir o ponto perfeito, acompanhada de molho barbecue e
+                        batatas rústicas.
+                    </p>
+                    <span class="preco">R$ 60,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/contrafile.jpg" alt="contrafile" />
+                <div class="prato-info">
+                    <h3>Contra Filé</h3>
+                    <p class="descricao">
+                        Corte nobre de contra filé grelhado no ponto certo, servido com arroz, fritas e molho
+                        chimichurri.
+                    </p>
+                    <span class="preco">R$ 75,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            <h2 id="bebidas">Bebidas Sem Álcool</h2>
+
+            <article class="prato-card">
+                <img src="img/agua.jpg" alt="Agua Mineral e Sem Gás" />
+                <div class="prato-info">
+                    <h3>Água Mineral Sem Gás</h3>
+                    <p class="descricao">
+                        Água mineral natural e pura, ideal para se refrescar e acompanhar qualquer refeição.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/cerveja.jpg" alt="cerveja" />
+                <div class="prato-info">
+                    <h3>Cerveja</h3>
+                    <p class="descricao">
+                        Cerveja gelada servida no ponto ideal, perfeita para acompanhar seus pratos favoritos.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/vinho.jpg" alt="vinho" />
+                <div class="prato-info">
+                    <h3>Vinho Suave</h3>
+                    <p class="descricao">
+                        Vinho tinto suave e equilibrado, com notas frutadas e final leve, ideal para harmonizar com
+                        massas e carnes.
+                    </p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/redbull.jpg" alt="Red Bull" />
+                <div class="prato-info">
+                    <h3>Red Bull</h3>
+                    <p class="descricao">
+                        Energético refrescante com sabor único, perfeito para manter o pique durante o dia.
+                    </p>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/refrigerante.webp" alt="Refrigerante" />
+                <div class="prato-info">
+                    <h3>Refrigerante</h3>
+                    <p class="descricao">
+                        Escolha entre os sabores clássicos de refrigerante, sempre gelados e prontos para servir.
+                    </p>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/suco.webp" alt="Suco de Laranja Natural" />
+                <div class="prato-info">
+                    <h3>Suco de Laranja Natural</h3>
+                    <p class="descricao">
+                        Suco natural de laranjas frescas, espremido na hora e cheio de sabor e vitamina C.
+                    </p>
+                    <span class="preco">R$ 18,00</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="categoria">
+            <h2 id="sobremesas">Sobremesas</h2>
+
+            <article class="prato-card">
+                <img src="img/semifreddo.jpg" alt="semifreddo" />
+                <div class="prato-info">
+                    <h3>Semifreddo</h3>
+                    <p class="descricao">
+                        Sobremesa italiana leve e gelada, feita com creme aerado e toques de frutas ou chocolate.
+                    </p>
+                    <span class="preco">R$ 30,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/frozen.jpg" alt="frozen" />
+                <div class="prato-info">
+                    <h3>Frozen</h3>
+                    <p class="descricao">
+                        Creme gelado e leve, servido em taça com cobertura de frutas vermelhas ou calda de chocolate.
+                    </p>
+                    <span class="preco">R$ 24,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/trufaCereja.jpg" alt="trufaCereja" />
+                <div class="prato-info">
+                    <h3>Trufa de Cereja</h3>
+                    <p class="descricao">
+                        Deliciosa trufa artesanal com recheio cremoso de cereja e cobertura de chocolate belga.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/torta-de-brigadeiro.jpg" alt="torta-de-brigadeiro" />
+                <div class="prato-info">
+                    <h3>Torta de Brigadeiro</h3>
+                    <p class="descricao">
+                        Massa leve coberta com brigadeiro cremoso e raspas de chocolate, perfeita para os amantes de
+                        doce.
+                    </p>
+                    <span class="preco">R$ 28,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/panna.jpg" alt="panna" />
+                <div class="prato-info">
+                    <h3>Panna Cotta</h3>
+                    <p class="descricao">
+                        Clássica sobremesa italiana à base de creme de leite e baunilha, servida com calda de frutas
+                        vermelhas.
+                    </p>
+                    <span class="preco">R$ 42,00</span>
+                </div>
+            </article>
+
+            <article class="prato-card">
+                <img src="img/cheesecake.jpg" alt="cheesecake" />
+                <div class="prato-info">
+                    <h3>Cheesecake</h3>
+                    <p class="descricao">
+                        Sobremesa cremosa com base crocante de biscoito e cobertura de geleia artesanal de frutas.
+                    </p>
+                    <span class="preco">R$ 35,00</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <br>
+
+
+    <h2 id="localização">Localização do Restaurante</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235031.4502516289!2d-43.53386721237066!3d-23.010315013754724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda4a27b6fe5d%3A0x63c3f6d1d89e0f4e!2sBarra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1760406694781!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    
+        <!-- formulário de reserva ==============================  -->
     <div class="reserva-container">
-        <h2>Reserve Sua Mesa</h2>
+        <h2 id="reservar">Reserve Sua Mesa</h2>
 
         <form action="#" method="POST">
 
@@ -383,7 +435,9 @@
 
         </form>
     </div>
-   
+
+    
+
 
     <!-- 
 Remove o contêiner se desejar estender o rodapé até a largura total. -->
@@ -422,7 +476,7 @@ Remove o contêiner se desejar estender o rodapé até a largura total. -->
     </div>
     <!-- End of .container -->
 
-    <button onclick="toggleTheme()">click</button>
+
 
 </body>
 
