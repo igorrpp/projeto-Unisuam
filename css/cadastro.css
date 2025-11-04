@@ -65,11 +65,7 @@
 
     }
 
-
-
-    h2,h4, #setaVoltar {
-        text-align: center;
-    }
+  
 
     @media(max-width: 600px) {
         .form-container {

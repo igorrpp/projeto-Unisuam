@@ -14,11 +14,12 @@
 <body>
 
   <div class="form-container">
-    <form>
+    <form onsubmit="return cadastrar(event)">
       <h2> É novo? Cadastre-se abaixo! </h2>
       <h4> Vamos precisar de algumas informações. </h4>
 
       <div class="form-group">
+
         <label for="nome">Nome completo: </label>
         <input id="inputNome" type="text" name="nome" placeholder="Digite seu nome completo..." minlength="6" required
           pattern=".{9,}">
@@ -30,41 +31,45 @@
       </div>
 
 
+      <div class="form-group">
+        <label for="telefone">Telefone: </label>
+        <input id="inputTelefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="11" pattern="[0-9]{11}" required>
+      </div>
 
       <div class="form-group">
         <label for="dataNascimento">Data de nascimento: </label>
-        <input id="date" type="date" placeholder="Data de nascimento" required>
+        <input id="inputNascimento" type="date" placeholder="Data de nascimento" required>
 
       </div>
 
       <div class="form-group">
 
         <label>Gênero: </a>
-          <select name="genero">
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outros">Outros</option>
+          <select id="inputGenero" name="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outros">Outros</option>
           </select>
       </div>
 
 
       <div class="form-group">
 
-        <label for="senha">Senha: </label>
+        <label>Senha: </label>
         <input id="inputSenha" type="password" name="senha" pattern="[0-9]*" minlength="6" required
           placeholder="Digite sua senha">
       </div>
 
       <div>
 
-        <label for="senha2">Confirmar senha: </label>
-        <input id="inputTelefone2" type="password" name="senha2" pattern="[0-9]*" minlength="6" required
+        <label>Confirmar senha: </label>
+        <input id="inputConfirmarSenha" type="password" name="senha2" pattern="[0-9]*" minlength="6" required
           placeholder="Confirme sua senha">
       </div>
 
       <div class="form-group">
-        <button onclick="cadastrar(event)">Cadastrar</button>
-       
+        <button type="submit">Cadastrar</button>
+
       </div>
       <div class="d-flex justify-content-center">
         <a id="setaVoltar" href="login.html">Lembrou que já tem cadastro?</a>
@@ -72,7 +77,7 @@
     </form>
 
   </div>
- 
+
 </body>
 
 </html>
@@ -84,29 +89,45 @@
   function cadastrar() {
     event.preventDefault();
 
-    let v_email = document.getElementById('inputEmail').value
-    let v_senha = document.getElementById('inputSenha').value
     let v_nome = document.getElementById('inputNome').value
+    let v_email = document.getElementById('inputEmail').value
+    let v_telefone = document.getElementById('inputTelefone').value
+    let v_nascimento = document.getElementById('inputNascimento').value
+    let v_genero = document.getElementById('inputGenero').value
+    let v_senha = document.getElementById('inputSenha').value
+    let v_confirmarSenha = document.getElementById('inputConfirmarSenha').value
 
+    if (v_senha === v_confirmarSenha) {
 
-    let usuario = {
-      nome: v_nome ,
-      email: v_email,
-      senha: v_senha
+      let usuario = {
+        nome: v_nome,
+        email: v_email,
+        telefone: v_telefone,
+        data_nascimento: v_nascimento,
+        genero: v_genero,
+        senha: v_senha,
+      }
+
+      localStorage.setItem('usuario', JSON.stringify(usuario));
+
+      alert('Cadastro feito com sucesso!')
+      window.location.href = "login.html";
+
+      // lembrar de retirar 
+      // let usuarioString = localStorage.getItem('usuario')
+      // let usuarioRecuperar = JSON.parse(usuarioString);
+
+    } else {
+      alert('Senhas não são iguais, digite novamente!')
     }
-    localStorage.setItem('usuario', JSON.stringify(usuario));
-    alert('Cadastro feito com sucesso!')
-    window.location.href = "login.html";
-    
+
+
+
+
+
+
   }
 
-  function trazerUsuario() {
-    let usuarioString = localStorage.getItem('usuario')
-    let usuarioRecuperar =  JSON.parse(usuarioString);
-    alert(usuarioRecuperar.email)
-    alert( usuarioRecuperar.senha)
 
-   
-  }
 
 </script>

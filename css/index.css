@@ -1,5 +1,6 @@
 body {
     background-color: #ffffff;
+    margin: 0 80px
 
 
 }
@@ -9,6 +10,8 @@ body {
     top: 1px;
     position: sticky;
     z-index: 999;
+    
+  
 }
 
 #textoCorrendo {
